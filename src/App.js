@@ -7,7 +7,7 @@ import fakeCourseData from './fakeData/onlineCourse';
 import Cart from './Components/Cart/Cart';
 function App() {
   const first15 = fakeCourseData.slice(0,15);
-  const [courses , setCourse] = useState(first15);
+  const [courses] = useState(first15);
   const [purchase,setPurchase] = useState([]);
   const handleAddCourse = (c) => {
     const newPurchase = [...purchase,c];
